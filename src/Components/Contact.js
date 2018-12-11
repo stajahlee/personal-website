@@ -54,9 +54,9 @@ class Contact extends Component {
 
                   <div>
                      <button className="submit">Submit</button>
-                     {/* <span id="image-loader">
-                        <img alt="" src="images/loader.gif" />
-                     </span> */}
+                     <span id="image-loader">
+                      <i className="fa fa-frown-o"></i> Sending email isn't ready yet. Sorry.<br />
+                     </span>
                   </div>
 					</fieldset>
 				   </form>
