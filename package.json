@@ -2,7 +2,7 @@
   "name": "personalportfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://stajahlee.github.io/personal-website",
+  "homepage": "https://www.stajahlee.com",
   "dependencies": {
     "jquery": "^3.3.1",
     "lightbox-react": "^0.3.7",
