@@ -16,7 +16,7 @@
       "state":"Ohio",
       "zip": "(Your Zip/Postal Code)"
     },
-    "website": "http://www.stajahlee.com",
+    "website": "stajahlee.github.io/personal-website/",
     "resumedownload":"resume_hoeflich.pdf",
     "social":[
       {
@@ -26,12 +26,12 @@
       },
       {
         "name":"github",
-        "url":"http://github.com/stajahlee",
+        "url":"https://github.com/stajahlee",
         "className":"fa fa-github"
       },
       {
         "name":"instagram",
-        "url":"http://instagram.com/stajahlee",
+        "url":"https://instagram.com/stajahlee",
         "className":"fa fa-instagram"
       }
     ]
