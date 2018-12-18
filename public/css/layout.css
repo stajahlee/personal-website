@@ -122,6 +122,7 @@ header .scrolldown a:hover { color: #11ABB0; }
 /* primary navigation
 --------------------------------------------------------------------- */
 #nav-wrap ul, #nav-wrap li, #nav-wrap a {
+  font-size: 14px;
 	 margin: 0;
 	 padding: 0;
 	 border: none;
@@ -197,13 +198,14 @@ ul#nav li.current a { color: #F06000; }
 #about a:hover, #about a:focus { color: #11ABB0; }
 
 #about h2 {
-   font: 16px/30px 'opensans-bold', sans-serif;
+   font: 14px/22px 'opensans-bold', sans-serif;
    color: #fff;
    margin-bottom: 12px;
 }
-#about p {
-   line-height: 30px;
-   color: rgb(202, 200, 200);
+#about .aboutme {
+  font: 12px/16px;
+  line-height: 30px;
+   color: rgb(201, 202, 202);
 }
 #about .profile-pic {
    position: relative;
@@ -246,7 +248,7 @@ ul#nav li.current a { color: #F06000; }
 #resume a:hover, #resume a:focus { color: #313131; }
 
 #resume h1 {
-   font: 18px/24px 'opensans-bold', sans-serif;
+   font: 16px/18px 'opensans-bold', sans-serif;
    text-transform: uppercase;
    letter-spacing: 1px;
 }
@@ -255,7 +257,7 @@ ul#nav li.current a { color: #F06000; }
    padding-bottom: 6px;
 }
 #resume h3 {
-   font: 25px/30px 'opensans-bold', sans-serif;
+   font: 16px/18px 'opensans-bold', sans-serif;
 }
 
 #resume .header-col { padding-top: 9px; }
@@ -267,7 +269,7 @@ ul#nav li.current a { color: #F06000; }
    border-bottom: 1px solid #E8E8E8;
 }
 #resume .info {
-   font: 16px/24px 'librebaskerville-italic', serif;
+   font: 14px/16px 'librebaskerville-italic', serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
@@ -277,8 +279,12 @@ ul#nav li.current a { color: #F06000; }
    margin-left: 5px;
 }
 #resume .date {
-   font: 15px/24px 'opensans-regular', sans-serif;
+   font: 14px/16px 'opensans-regular', sans-serif;
    margin-top: 6px;
+}
+#resume .content {
+  font: 13px/14px 'opensans-regular', sans-serif;
+  margin-bottom: 8px;
 }
 
 /*----------------------------------------------*/
@@ -304,7 +310,7 @@ ul#nav li.current a { color: #F06000; }
 }
 .bars li em {
 	font: 15px 'opensans-bold', sans-serif;
-   color: #027e86;
+   color: #465d5f;
 	text-transform: uppercase;
    letter-spacing: 2px;
 	font-weight: normal;
@@ -318,9 +324,9 @@ ul#nav li.current a { color: #F06000; }
 
    margin: 0;
    padding-right: 24px;
-  	background: #3c1b44;
+   background: #09556d;
    display: inline-block;
-  	height: 42px;
+   height: 42px;
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }

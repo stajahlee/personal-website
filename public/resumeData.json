@@ -43,20 +43,17 @@
         "school":"Ohio University - Russ College of Engineering and Technology",
         "degree":"Bachelor of Science in Computer Science",
         "graduated":"May 2018",
-        "description":["Having graduated Summa Cum Laude in 3 years and inducted into The Honor Society of Phi Kappa Phi, ", 
-                      "my education at the Russ College of Engineering and Technology at Ohio University was both challenging ",
-                      "and highly rewarding. I was honored to also receive a Grace Hopper Celebration scholarship and other ",
-                      "scholarships in the department to finish my degree. My education was supplemented by acting as ",
-                      "a founding member of the Renaissance Engineers, working as a TA for the course \"Engineering Overview,\" ",
-                      "and completing various internships."]
+        "description1":"Graduated Summa Cum Laude in 3 years and inducted into The Honor Society of Phi Kappa Phi",
+        "description2":"Received a Grace Hopper Celebration scholarship and Russ College scholarships to finish my degree",
+        "description3":"Founding member of the Renaissance Engineers and TA for the course \"Engineering Overview\""
       },
       {
         "school":"Marietta College",
         "degree":"Bachelor of Arts in Graphic Design (and Studio Art - Painting)",
         "graduated":"May 2006",
-        "description":["I double majored in Graphic Design and Studio Art (Painting) when I attended Marietta College. I graduated with ",
-                      "this degree Cum Laude and inducted into Kappi Pi (Art Honor Society). I had the honor of painting a mural that is ",
-                      "still able to be viewed on Butler Street in Marietta, Ohio and receiving awards for original artwork."]
+        "description1":"Double majored in Graphic Design and Studio Art (Painting)",
+        "description2":"Graduated Cum Laude and inducted into Kappa Phi (Art Honor Society)",
+        "description3":"Painted a 400 sq. ft. mural in Marietta, Ohio and received multiple awards for original artwork"
       }
     ],
     "work":[
@@ -64,17 +61,15 @@
         "company":"CGI",
         "title":"Technology Consultant ",
         "years":"June 2018 - Present",
-        "description":["As a technology consultant with CGI, I have built a Python service for a client using Pandas and various Anaconda technologies. ",
-                       "The client will retrieve analysis results from two Hive tables where the output is stored. ",
-                      "During downtime, my team and I built a sample Angular front-end with ",
-                      "calls to the server side REST API."]
+        "description1":"Built an automated data scanning process in Python that allows the client to retrieve results from Hive >60x faster than manual processes",
+        "description2":"Used Angular to build a front-end web application with calls to the server side REST API"
       },
       {
         "company":"JP Morgan Chase",
         "title":"Technology Analyst Program - Software Engineering Internship",
         "years":"June 2017 - August 2017",
-        "description":["Used JavaScript, HTML/CSS, and React.js for user interface components in a new empoloyee workflow ",
-                      "web application. Integrated with the Agile scrum team in Digital for front-end component specification development."]
+        "description1":"Used JavaScript, HTML/CSS, and React.js for user interface components in a new employee workflow application",
+        "description2":"Integrated with the Agile scrum team in Digital for front-end component specification development"
       }
     ],
     "skills":[
