@@ -19,7 +19,9 @@ class Footer extends Component {
            </ul>
 
            <ul className="copyright">
-              <li>Design by <a title="Styleshout" href="https://www.styleshout.com/">Styleshout</a></li>
+              <li>Images by <a title="Tim Hoeflich Photography" href="https://www.flickr.com/photos/thoeflich/" target="_blank" rel="noopener noreferrer">Tim Hoeflich Photography</a></li>
+              <li>Design by <a title="Styleshout" href="https://www.styleshout.com/" target="_blank" rel="noopener noreferrer">Styleshout</a></li>
+              <li>Template by <a title="Tim Baker Dev" href="https://github.com/tbakerx/" target="_blank" rel="noopener noreferrer">Tim Baker </a> &copy;2017</li>
            </ul>
 
         </div>
