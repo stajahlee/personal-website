@@ -272,7 +272,7 @@ ul#nav li.current a { color:#3e5474; }
    border-bottom: 1px solid #E8E8E8;
 }
 #resume .info {
-   font: 13px/20px 'opensans-regular', sans-serif;
+   font: 15px/20px 'opensans-regular', sans-serif;
    color: #6E7881;
    margin-bottom: 18px;
    margin-top: 9px;
@@ -282,11 +282,11 @@ ul#nav li.current a { color:#3e5474; }
    margin-left: 5px;
 }
 #resume .date {
-   font: 13px/20px 'opensans-regular', sans-serif;
+   font: 15px/20px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
 #resume .content {
-  font: 13px/14px 'opensans-regular', sans-serif;
+  font: 15px/14px 'opensans-regular', sans-serif;
   margin-bottom: 8px;
 }
 
