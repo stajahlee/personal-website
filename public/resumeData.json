@@ -54,9 +54,9 @@
         "school":"Marietta College",
         "degree":"Bachelor of Arts in Graphic Design (and Studio Art - Painting)",
         "graduated":"May 2006",
-        "description":["I double majored in Graphic Design and Studio Art (Painting) when I attended Marietta College. I graduated with ",
-                      "this degree Cum Laude and inducted into Kappi Pi (Art Honor Society). I had the honor of painting a mural that is ",
-                      "still able to be viewed on Butler Street in Marietta, Ohio and receiving awards for original artwork."]
+        "description1":"Double majored in Graphic Design and Studio Art (Painting)",
+        "description2":"Graduated Cum Laude and inducted into Kappa Phi (Art Honor Society)",
+        "description3":"Painted a 400 sq. ft. mural in Marietta, Ohio and received multiple awards for original artwork"
       }
     ],
     "work":[
@@ -73,8 +73,8 @@
         "company":"JP Morgan Chase",
         "title":"Technology Analyst Program - Software Engineering Internship",
         "years":"June 2017 - August 2017",
-        "description":["Used JavaScript, HTML/CSS, and React.js for user interface components in a new empoloyee workflow ",
-                      "web application. Integrated with the Agile scrum team in Digital for front-end component specification development."]
+        "description1":"Used JavaScript, HTML/CSS, and React.js for user interface components in a new employee workflow application",
+        "description2":"Integrated with the Agile scrum team in Digital for front-end component specification development"
       }
     ],
     "skills":[
