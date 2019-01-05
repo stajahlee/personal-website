@@ -43,12 +43,9 @@
         "school":"Ohio University - Russ College of Engineering and Technology",
         "degree":"Bachelor of Science in Computer Science",
         "graduated":"May 2018",
-        "description":["Having graduated Summa Cum Laude in 3 years and inducted into The Honor Society of Phi Kappa Phi, ", 
-                      "my education at the Russ College of Engineering and Technology at Ohio University was both challenging ",
-                      "and highly rewarding. I was honored to also receive a Grace Hopper Celebration scholarship and other ",
-                      "scholarships in the department to finish my degree. My education was supplemented by acting as ",
-                      "a founding member of the Renaissance Engineers, working as a TA for the course \"Engineering Overview,\" ",
-                      "and learning through various internships and work positions."]
+        "description1":"Graduated Summa Cum Laude in 3 years and inducted into The Honor Society of Phi Kappa Phi",
+        "description2":"Received a Grace Hopper Celebration scholarship and Russ College scholarships to finish my degree",
+        "description3":"Founding member of the Renaissance Engineers and TA for the course \"Engineering Overview\""
       },
       {
         "school":"Marietta College",
@@ -64,10 +61,9 @@
         "company":"CGI",
         "title":"Technology Consultant ",
         "years":"June 2018 - Present",
-        "description":["As a technology consultant with CGI, I am currently a front-end developer using React.js to provide customer-facing solutions for the client. In the previous client project, I built a Python service using Pandas and various Anaconda technologies. ",
-                       "The client will retrieve analysis results from two Hive tables where the output is stored. ",
-                      "During downtime, my team and I built a sample Angular front-end with ",
-                      "calls to the server side REST API."]
+        "description1":"As a technology consultant with CGI, I am currently a front-end developer using React.js to provide customer-facing solutions for the client.",
+        "description2": ["In the previous client project, I built a Python service using Pandas and various Anaconda technologies. ",
+                       "The client will retrieve analysis results from two Hive tables where the output is stored. "]
       },
       {
         "company":"JP Morgan Chase",
