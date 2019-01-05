@@ -96,7 +96,7 @@ q:before, q:after {
 }
 
 ins {
-   background-color: #ff9;
+   background-color: rgb(153, 218, 255);
    color: #000;
    text-decoration: none;
 }
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6 {
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { font-weight: inherit; }
 h1 { font-size: 28px; line-height: 28x; margin-bottom: 12px; letter-spacing: -1px; }
 h2 { font-size: 20px; line-height: 26px; margin-bottom: 6px; }
-h3 { font-size: 18px; line-height: 30px; margin-bottom: 12px; }
+h3 { font-size: 12px; line-height: 30px; margin-bottom: 12px; }
 h4 { font-size: 16px; line-height: 30px; margin-bottom: 6px; }
 h5 { font-size: 14px; line-height: 30px; }
 h6 { font-size: 12px; line-height: 30px; }
@@ -287,14 +287,14 @@ hr { border: solid #E3E3E3; border-width: 1px 0 0; clear: both; margin: 11px 0 3
 a, a:visited {
    text-decoration: none;
    outline: 0;
-   color: #11ABB0;
+   color: white;
 
    -webkit-transition: color .3s ease-in-out;
    -moz-transition: color .3s ease-in-out;
    -o-transition: color .3s ease-in-out;
    transition: color .3s ease-in-out;
 }
-a:hover, a:focus { color: #313131; }
+a:hover, a:focus { color: #eefbfd; }
 p a, p a:visited { line-height: inherit; }
 
 
@@ -460,14 +460,14 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
    font: 16px/30px 'opensans-bold', sans-serif;
-   background: #11ABB0;
+   background: rgba(17, 171, 176, 0);
+   border-color: #11ABB0;
    display: inline-block;
 	text-decoration: none;
    letter-spacing: 0;
    color: #fff;
 	padding: 12px 20px;
 	margin-bottom: 18px;
-   border: none;
    cursor: pointer;
    height: auto;
 
@@ -519,7 +519,23 @@ input::-moz-focus-inner {
     padding: 0;
 }
 
-
+/* Gray outline button */
+.btn {
+   border: 2px solid white;
+   background-color:transparent;
+   color: white;
+   padding: 14px 28px;
+   font-size: 16px;
+   cursor: pointer;
+ }
+.default {
+   color: white;
+ }
+ 
+ .default:hover {
+   background: #f35648;
+   color: white;
+ }
 /*  7. Forms  --------------------------------------------------------- */
 
 form { margin-bottom: 24px; }
@@ -567,7 +583,7 @@ legend {
 }
 label span,
 legend span {
-	color: #8B9798;
+	color: rgb(94, 95, 95);
    font: 14px/24px 'opensans-regular', sans-serif;
 }
 

@@ -6,6 +6,7 @@ class About extends Component {
     if(this.props.data){
       var fullname = this.props.data.fullname;
       var profilepic= "images/"+this.props.data.image;
+      var description = this.props.data.description;
       var bio = this.props.data.bio;
       var email = this.props.data.email;
       var linkedincontact = this.props.data.linkedincontact;
@@ -21,15 +22,17 @@ class About extends Component {
          <div className="nine columns main-col">
             <h2>About Me</h2>
 
-            <p>{bio}</p>
+            <p>
+              {description}<br />{bio}
+            </p>
             <div className="row">
                <div className="columns contact-details">
                   <h2>Contact Details</h2>
                   <p className="address">
 						   <span>{fullname}</span><br />
 						   <span>Contact me via email or LinkedIn.</span><br />
-                     <span>{email}</span><br />
-                     <span>{linkedincontact}</span><br />
+                     <a href="mailto:stajah@stajahlee.com?subject=An%20awesome%20message%20for%20Stajah!">{email}</a><br />
+                     <a href="https://www.linkedin.com/in/stajah" target="_blank" rel="noopener noreferrer">{linkedincontact}</a><br />
 
 					   </p>
                </div>

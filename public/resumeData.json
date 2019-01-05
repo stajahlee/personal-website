@@ -1,11 +1,11 @@
 {
   "main": {
-    "name":"Stajah",
+    "name":"Sonjah",
     "fullname": "Stajah Lee Hoeflich",
     "occupation":"Software Developer",
-    "description":"I'm passionate about the great potential of technology, but tech is not my only passion",
+    "description":"I'm passionate about the great potential of technology, but tech is not my only passion.",
     "image":"profilepic.jpg",
-    "bio":"I am driven and passionate about technology, especially how innovative tech can be used for good. I have been a Grace Hopper scholar and could be called a Renaissance Woman (as a techie nerd, painter, singer, apothecary-hobbyist).",
+    "bio":"I have been a Grace Hopper Scholar, am a member of Phi Kappa Phi, and could be called a Renaissance Woman (as a techie nerd, painter, singer, apothecary-hobbyist, bibliophile, and so on).",
     "contactmessage":"I would love to hear from you - send me a message and I will reach back out to you soon!",
     "email": "stajah@stajahlee.com",
     "linkedincontact": "linkedin.com/in/stajah",
@@ -48,7 +48,7 @@
                       "and highly rewarding. I was honored to also receive a Grace Hopper Celebration scholarship and other ",
                       "scholarships in the department to finish my degree. My education was supplemented by acting as ",
                       "a founding member of the Renaissance Engineers, working as a TA for the course \"Engineering Overview,\" ",
-                      "and completing various internships."]
+                      "and learning through various internships and work positions."]
       },
       {
         "school":"Marietta College",
@@ -64,7 +64,7 @@
         "company":"CGI",
         "title":"Technology Consultant ",
         "years":"June 2018 - Present",
-        "description":["As a technology consultant with CGI, I have built a Python service for a client using Pandas and various Anaconda technologies. ",
+        "description":["As a technology consultant with CGI, I am currently a front-end developer using React.js to provide customer-facing solutions for the client. In the previous client project, I built a Python service using Pandas and various Anaconda technologies. ",
                        "The client will retrieve analysis results from two Hive tables where the output is stored. ",
                       "During downtime, my team and I built a sample Angular front-end with ",
                       "calls to the server side REST API."]
