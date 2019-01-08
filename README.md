@@ -1,4 +1,6 @@
-# Thanks to the React JS Resume Web App Template from Tim Baker!      
+# Personal Resume Website:  www.stajahlee.com
+
+## Thanks to the React JS Resume Web App Template from Tim Baker!      
 
 ## Description
 This is a ReactJS based personal resume website. I have built this by following a template created by Tim Baker. Check out his repo (in the credits below) 
