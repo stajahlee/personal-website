@@ -1,4 +1,8 @@
-# Personal Resume Website:  www.stajahlee.com
+# Personal Resume Website
+
+### www.stajahlee.com
+
+![image of personal website](http://oi63.tinypic.com/2cq1h55.jpg)
 
 ## Thanks to the React JS Resume Web App Template from Tim Baker!      
 
