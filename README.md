@@ -2,7 +2,7 @@
 
 ### www.stajahlee.com
 
-![image of personal website](http://oi63.tinypic.com/2cq1h55.jpg)
+![image of personal website](https://i.imgur.com/jE5zrHi.jpg)
 
 ## Description
 This React.js personal resume SPA was built to demonstrate my comfort in working with a React app for a client. It was built over the weekend so is light in content.
@@ -21,3 +21,5 @@ I am a software developer, with a past life in graphic design, so meshing those 
 
 <hr />
 <a href="https://github.com/facebook/create-react-app/blob/master/README.md"> README at create-react-app gives thorough run app instructions</a>
+
+`npm start` starts the dev server and `npm run deploy` will deploy to GitHub pages, then redirect to custom domain in GitHub settings.
