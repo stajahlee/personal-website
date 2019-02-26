@@ -522,7 +522,7 @@ input::-moz-focus-inner {
 /* Gray outline button */
 .btn {
    border: 2px solid white;
-   background-color:transparent;
+   background-color:rgba(32, 32, 32, .80);
    color: white;
    padding: 14px 28px;
    font-size: 16px;
@@ -533,7 +533,7 @@ input::-moz-focus-inner {
  }
  
  .default:hover {
-   background: #f35648;
+   background: rgb(3, 106, 124);
    color: white;
  }
 /*  7. Forms  --------------------------------------------------------- */
