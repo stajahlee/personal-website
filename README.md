@@ -2,7 +2,7 @@
 
 ### www.stajahlee.com
 
-![image of personal website](https://i.imgur.com/jE5zrHi.jpg)
+![image of personal website](https://i.imgur.com/VBs1ML3.jpg)
 
 ## Description
 This React.js personal resume SPA was built to demonstrate my comfort in working with a React app for a client. It was built over the weekend so is light in content.
