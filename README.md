@@ -1,20 +1,23 @@
-# Thanks to the React JS Resume Web App Template from Tim Baker!      
+# Personal Resume Website
+
+### www.stajahlee.com
+
+![image of personal website](http://oi63.tinypic.com/2cq1h55.jpg)
 
 ## Description
-This is a ReactJS based personal resume website. I have built this by following a template created by Tim Baker. Check out his repo (in the credits below) 
+This React.js personal resume SPA was built to demonstrate my comfort in working with a React app for a client. It was built over the weekend so is light in content.
+
+I am a software developer, with a past life in graphic design, so meshing those worlds in the form of front end development is an awesome experience!
 
 ## Credits
 ##### Tim Baker
-<a href="https://github.com/tbakerx/react-resume-template">Tim Baker's github repo</a>
+<a href="https://github.com/tbakerx/react-resume-template">Tim Baker's github repo - base template set up</a>
 
 ##### Udemy Course
 <a href="https://www.udemy.com/projects-in-reactjs-the-complete-react-learning-course/learn/v4/overview">Projects in ReactJS: The Complete React Learning Course by Eduonix</a>
 
-#### HTML Design Template
+##### HTML Design Template
 <a href="https://www.styleshout.com/free-templates/ceevee/">Ceevee Template by Styleshout</a>
-
-##### Header photo credit
-<a href="https://www.flickr.com/photos/thoeflich/">My father-in-law, Tim Hoeflich, an amazing nature photographer.</a>
 
 <hr />
 <a href="https://github.com/facebook/create-react-app/blob/master/README.md"> README at create-react-app gives thorough run app instructions</a>
