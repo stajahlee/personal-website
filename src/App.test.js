@@ -1,9 +1,22 @@
 import React from 'react';
-import { render } from '@testing-library/react';
+import { shallow } from 'enzyme';
 import App from './App';
+import Home from './Home';
 
-test('renders learn react link', () => {
-  const { getByText } = render(<App />);
-  const linkElement = getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+describe('AppComponent', () => {
+  let wrapper;
+
+  beforeEach(() => {
+    wrapper = shallow(<App />);
+   });
+
+  it('should render correctly', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
+
+  it('renders Home component', () => {
+    const home = <Home />;
+    expect(wrapper.contains(home)).toEqual(true);
+    expect(wrapper).toMatchSnapshot();
+  });
 });
