@@ -2,18 +2,18 @@ import withRoot from './modules/withRoot';
 // --- Post bootstrap -----
 import React from 'react';
 import Categories from './modules/views/Categories';
-import ProductSmokingHero from './modules/views/ProductSmokingHero';
+import GetInTouch from './modules/views/GetInTouch';
 import AppFooter from './modules/views/AppFooter';
-import ProductHero from './modules/views/ProductHero';
-import AppAppBar from './modules/views/AppAppBar';
+import Intro from './modules/views/Intro';
+import FrontAppBar from './modules/views/FrontAppBar';
 
 function Index() {
   return (
     <React.Fragment>
-      <AppAppBar />
-      <ProductHero />
+      <FrontAppBar />
+      <Intro />
       <Categories />
-      <ProductSmokingHero />
+      <GetInTouch />
       <AppFooter />
     </React.Fragment>
   );

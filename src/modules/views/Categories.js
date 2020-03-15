@@ -127,8 +127,8 @@ function ProductCategories(props) {
         Let's see some work
       </Typography> */}
       <div className={classes.images}>
-                {/* Do Resume on its own bc it contains a download */}
-                <ButtonBase
+          {/* Do Resume on its own bc it contains a download */}
+          <ButtonBase
             key={'book'}
             className={classes.imageWrapper}
             style={{
@@ -166,6 +166,7 @@ function ProductCategories(props) {
             style={{
               width: image.width,
             }}
+            disabled
           >
             <div
               className={classes.imageSrc}
