@@ -25,8 +25,8 @@ const useStyles = makeStyles(theme => ({
     backgroundColor: theme.palette.secondary.light,
   },
   container: {
-    marginTop: theme.spacing(8),
-    marginBottom: theme.spacing(8),
+    marginTop: theme.spacing(2),
+    marginBottom: theme.spacing(3),
     display: 'flex',
   },
   iconsWrapper: {
@@ -43,6 +43,7 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: theme.spacing(1),
+    color: '#0176B5'
   },
   list: {
     margin: 0,
