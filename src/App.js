@@ -10,17 +10,15 @@ import './App.css';
 
 function App() {
   return (
-    <Router>
+    <Router basename={process.env.PUBLIC_URL}>
       <div>
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         <Switch>
-          <Route path="/paintings">
-            <Paintings />
-          </Route>
-          <Route path="/">
-            <Home />
-          </Route>
+          <Route exact path="/" component={Home} />
+          <Route path="/home" component={Home} />
+          <Route path="/paintings" component={Paintings} />
+          <Route path={new RegExp('/.*')} component={Home} />
         </Switch>
       </div>
     </Router>
