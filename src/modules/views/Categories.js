@@ -108,6 +108,7 @@ function ProductCategories(props) {
       url: pride,
       title: 'Painter',
       width: '25%',
+      href: '/paintings'
     }, 
     {
       url: library,
@@ -166,7 +167,7 @@ function ProductCategories(props) {
             style={{
               width: image.width,
             }}
-            disabled
+            href={image.href}
           >
             <div
               className={classes.imageSrc}

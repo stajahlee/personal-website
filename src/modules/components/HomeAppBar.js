@@ -2,8 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import Link from '@material-ui/core/Link';
-import AppBar from '../components/AppBar';
-import Toolbar, { styles as toolbarStyles } from '../components/Toolbar';
+import AppBar from './BaseAppBar';
+import Toolbar, { styles as toolbarStyles } from './Toolbar';
 import QuestionAnswerIcon from '@material-ui/icons/QuestionAnswer';
 import PersonAddIcon from '@material-ui/icons/PersonAdd';
 import MailOutlineIcon from '@material-ui/icons/MailOutline';
@@ -37,13 +37,10 @@ const styles = theme => ({
   },
   rightMargin: {
     marginRight: theme.spacing(2)
-  },
-  linkSecondary: {
-    color: theme.palette.secondary.main,
-  },
+  }
 });
 
-function FrontAppBar(props) {
+function HomeAppBar(props) {
   const { classes } = props;
 
   return (
@@ -62,8 +59,7 @@ function FrontAppBar(props) {
             <QuestionAnswerIcon className={classes.leftMargin}/>
             <MailOutlineIcon className={classes.leftMargin}/>
           </Link>
-          <div className={classes.right}>
-          </div>
+          <div className={classes.right}/>
         </Toolbar>
       </AppBar>
       <div className={classes.placeholder} />
@@ -71,8 +67,8 @@ function FrontAppBar(props) {
   );
 }
 
-FrontAppBar.propTypes = {
+HomeAppBar.propTypes = {
   classes: PropTypes.object.isRequired,
 };
 
-export default withStyles(styles)(FrontAppBar);
+export default withStyles(styles)(HomeAppBar);

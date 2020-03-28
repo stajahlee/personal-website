@@ -11,9 +11,7 @@ function Copyright() {
   return (
     <React.Fragment>
       {'© '}
-      <Link color="inherit" href="stajahlee.com">
-        stajahlee.com
-      </Link>{' '}
+      <Link color="inherit" href="">stajahlee.com</Link>{' '}
       {new Date().getFullYear()}
     </React.Fragment>
   );
