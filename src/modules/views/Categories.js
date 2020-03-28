@@ -10,7 +10,8 @@ import dev from '../images/dev.jpg';
 import pride from '../images/pride.jpg'
 import laptop from '../images/laptop.jpg'
 import library from '../images/library.jpg'
-import design from '../images/design.jpg'
+import design from '../images/design.jpg';
+import { Modal } from '../components/Modal.js';
 
 const styles = theme => ({
   root: {
@@ -160,14 +161,8 @@ function ProductCategories(props) {
           </ButtonBase>
           {/* Then map out the rest */}
         {images.map(image => (          
-          <ButtonBase
-            key={image.title}
-            className={classes.imageWrapper}
-            style={{
-              width: image.width,
-            }}
-            disabled
-          >
+          <Modal key={image.title} activator={({ setShow }) => (
+            <ButtonBase className={classes.imageWrapper} style={{ width: image.width }} type="button" onClick={() => setShow(true)}>
             <div
               className={classes.imageSrc}
               style={{
@@ -186,7 +181,9 @@ function ProductCategories(props) {
                 <div className={classes.imageMarked} />
               </Typography>
             </div>
-          </ButtonBase>
+            </ButtonBase>)}>
+            <div> This is inside the {image.title} modal!</div>
+            </Modal>
         ))}
       </div>
     </Container>
