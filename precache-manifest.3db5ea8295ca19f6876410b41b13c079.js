@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "6a6dae5b3f4892085184bc7b44f90bf9",
+    "revision": "51ea3f0e58362d91f84a8e24e7d82f3f",
     "url": "/index.html"
   },
   {
-    "revision": "60e054bb0e5eb1422822",
+    "revision": "cb679b099f44944037ad",
     "url": "/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "3848b7d0dd8137b585f2",
-    "url": "/static/js/2.d9727695.chunk.js"
+    "revision": "bf156c72e6038ef3c5be",
+    "url": "/static/js/2.47d7910d.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.d9727695.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.47d7910d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "60e054bb0e5eb1422822",
-    "url": "/static/js/main.865980c7.chunk.js"
+    "revision": "cb679b099f44944037ad",
+    "url": "/static/js/main.973f2b62.chunk.js"
   },
   {
     "revision": "63396484946f0d424f7b",
@@ -26,6 +26,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f09424e3df8f706035f95c5b28e6654d",
     "url": "/static/media/anxiety.f09424e3.jpg"
+  },
+  {
+    "revision": "ea3ba70395544c8f866851d354c923d3",
+    "url": "/static/media/bear.ea3ba703.gif"
   },
   {
     "revision": "236458df80e6fce510eca04443d50c12",
@@ -74,6 +78,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "820025c14ab4edf33e52096f9af71670",
     "url": "/static/media/profilepic.820025c1.png"
+  },
+  {
+    "revision": "9aff6a9f31564af1e87afb51b8d73375",
+    "url": "/static/media/react-dev.9aff6a9f.png"
   },
   {
     "revision": "b5fb61846f8f3387847478da72df3b99",
