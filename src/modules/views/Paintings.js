@@ -45,6 +45,8 @@ const useStyles = makeStyles((theme) => ({
   },
   cardContent: {
     flexGrow: 1,
+    pointerEvents: 'none',
+    cursor: 'default'
   },
   footer: {
     backgroundColor: theme.palette.background.paper,
@@ -58,7 +60,13 @@ function Paintings() {
   const [selectedValue, setSelectedValue] = React.useState(paintings[0]);
 
   const handleClickOpen = (event) => {
-    const currentPainting = paintings.filter(p => p.name === event.target.title)
+    let currentPainting;
+    if (event.target.children.length > 0) {
+      currentPainting = paintings.filter(p => p.name === event.target.children[0].title);
+    }
+    else {
+      currentPainting = paintings.filter(p => p.name === event.target.title);
+    }
     setSelectedValue(currentPainting[0]);
     setOpen(true);
 
@@ -107,7 +115,7 @@ function Paintings() {
                         {painting.size}
                       </Typography>
                     </CardContent>
-                  </Card>
+                 </Card>
                 </CardActionArea>
 
               </Grid>

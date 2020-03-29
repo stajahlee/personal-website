@@ -35,15 +35,11 @@ function GetInTouch(props) {
 
   return (
     <Container className={classes.root} component="section">
-      <Button className={classes.button} onClick={()=> {sendEmail()}
-      }>
+      <Button className={classes.button} onClick={()=> {sendEmail()}}>
         <Typography variant="h5" component="span">
-          Questions?  Coffee meetup requests?
+          Questions?  Virtual meetup requests? Get in touch!
         </Typography>
       </Button>
-      <Typography variant="subtitle1" className={classes.link}>
-        Get in touch!
-      </Typography>
     </Container>
   );
 }
