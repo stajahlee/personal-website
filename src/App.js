@@ -20,7 +20,6 @@ function App() {
           <Route path="/home" component={Home} />
           <Route path="/paintings" component={Paintings} />
           <Route path="/react-developer" component={ReactDeveloper} />
-          <Route path={new RegExp('/.*')} component={Home} />
         </Switch>
       </div>
     </Router>

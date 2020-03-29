@@ -1,5 +1,5 @@
 import { createMuiTheme } from '@material-ui/core/styles';
-import { green, grey, red } from '@material-ui/core/colors';
+import { green, grey, red, pink } from '@material-ui/core/colors';
 
 const rawTheme = createMuiTheme({
   palette: {
@@ -9,9 +9,9 @@ const rawTheme = createMuiTheme({
       dark: 'black',
     },
     secondary: {
-      light: '#eaeaea',
-      main: '#ff3366',
-      dark: '#e62958',
+      light: pink[300],
+      main: pink[600],
+      dark: pink[900],
     },
     warning: {
       main: '#ffc071',
@@ -35,6 +35,7 @@ const rawTheme = createMuiTheme({
     fontWeightRegular: 400, // Work Sans
     fontWeightMedium: 700, // Roboto Condensed
     fontFamilySecondary: "'Roboto Condensed', sans-serif",
+    palette: {primary: green[500]}
   },
 });
 
