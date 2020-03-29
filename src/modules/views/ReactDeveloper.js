@@ -1,5 +1,6 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import withRoot from '../../modules/withRoot';
+import { makeStyles } from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import ListItemText from '@material-ui/core/ListItemText';
@@ -8,18 +9,16 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
-import { makeStyles } from '@material-ui/core/styles';
-import siteImg from '../images/tree.jpg';
-import AppBar from '../components/SecondaryAppBar';
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import PetsIcon from '@material-ui/icons/Pets';
 import DvrIcon from '@material-ui/icons/Dvr';
 import MenuBookIcon from '@material-ui/icons/MenuBook';
 import SettingsSystemDaydreamIcon from '@material-ui/icons/SettingsSystemDaydream';
 import reactLogo from '../images/react-logo.png';
+import siteImg from '../images/tree.jpg';
+import AppBar from '../components/SecondaryAppBar';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -53,12 +52,9 @@ const useStyles = makeStyles((theme) => ({
   description: {
     padding: '120px 0 0',
   },
-  gif: {
-    marginTop: 50
-  },
   img: {
-    margin: 'auto',
-    maxWidth: '100%'
+    maxWidth: 100, 
+    margin: 'auto'
   },
   fullWidth: {
     width: '100%'
@@ -69,32 +65,8 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-const giphyAPIKey = '1Ao026MuXFjE4vHkmojuXkVzbjzahK2H';
-const offset = (Math.floor(Math.random() * 15) + 1);
-
-
 function ReactDeveloper() {
   const classes = useStyles();
-  const [gifData, setGifData] = useState([]);
-
-  useEffect(() => {
-    fetch(
-      `http://api.giphy.com/v1/gifs/search?q=adorable%20animals&api_key=${giphyAPIKey}&limit=1&offset=${offset}`,
-      {
-        method: "GET",
-        headers: new Headers({
-          Accept: "application/vnd.github.cloak-preview"
-        })
-      }
-    )
-      .then(res => res.json())
-      .then(response => {
-        setGifData(response.data);
-      })
-      .catch(error => console.log(error));
-  }, []);
-
-  const gifUrl = (gifData[0] && gifData[0].images && gifData[0].images.downsized_large && gifData[0].images.downsized_large.url);
 
   return (
     <React.Fragment>
@@ -107,7 +79,7 @@ function ReactDeveloper() {
               Front End Dev with React
             </Typography>
             <div className={classes.logo}>
-              <img src={reactLogo} alt="react logo" style={{maxWidth: 100, margin: 'auto'}}/>
+              <img src={reactLogo} alt="react logo" className={classes.img}/>
             </div>
             <div className={classes.paper}>
 
@@ -181,20 +153,6 @@ function ReactDeveloper() {
                   </div>
                 </ExpansionPanelDetails>
               </ExpansionPanel> 
-
-              <ExpansionPanel className={classes.fullWidth}>
-                <ExpansionPanelSummary
-                  expandIcon={<ExpandMoreIcon />}
-                  aria-controls="panel4a-content"
-                  id="panel4a-header"
-                >
-                  <PetsIcon className={classes.icon} />
-                  <Typography component="h1" variant="h6" color="primary">Random Adorable Animal GIF</Typography>
-                </ExpansionPanelSummary>
-                <ExpansionPanelDetails>
-                    <img src={gifUrl} alt="adorable animal gif" className={classes.img} />
-                </ExpansionPanelDetails>
-              </ExpansionPanel>   
 
             </div>
         </Grid>

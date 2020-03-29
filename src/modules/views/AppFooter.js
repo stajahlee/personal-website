@@ -20,7 +20,7 @@ function Copyright() {
 const useStyles = makeStyles(theme => ({
   root: {
     display: 'flex',
-    backgroundColor: theme.palette.secondary.light,
+    backgroundColor: theme.palette.primary.light,
   },
   container: {
     marginTop: theme.spacing(2),
@@ -28,7 +28,7 @@ const useStyles = makeStyles(theme => ({
     display: 'flex',
   },
   iconsWrapper: {
-    height: 120,
+    height: 110,
   },
   icons: {
     display: 'flex',
@@ -41,16 +41,12 @@ const useStyles = makeStyles(theme => ({
     justifyContent: 'center',
     alignItems: 'center',
     marginRight: theme.spacing(1),
-    color: '#0176B5'
+    color: theme.palette.primary.main
   },
   list: {
     margin: 0,
     listStyle: 'none',
     padding: 0,
-  },
-  listItem: {
-    paddingTop: theme.spacing(0.5),
-    paddingBottom: theme.spacing(0.5),
   },
   center: {
     margin: 'auto',
