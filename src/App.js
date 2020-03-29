@@ -6,6 +6,7 @@ import {
 } from "react-router-dom";
 import Home from './Home';
 import Paintings from './modules/views/Paintings'
+import ReactDeveloper from './modules/views/ReactDeveloper'
 import './App.css';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route exact path="/" component={Home} />
           <Route path="/home" component={Home} />
           <Route path="/paintings" component={Paintings} />
+          <Route path="/react-developer" component={ReactDeveloper} />
           <Route path={new RegExp('/.*')} component={Home} />
         </Switch>
       </div>

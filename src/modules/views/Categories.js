@@ -103,6 +103,7 @@ function ProductCategories(props) {
       url: dev,
       title: 'React Developer',
       width: '44%',
+      href: '/react-developer'
     },
     {
       url: pride,
