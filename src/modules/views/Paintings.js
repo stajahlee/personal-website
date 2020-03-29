@@ -19,6 +19,7 @@ import humility from '../images/paintings/humility.jpg';
 import pride from '../images/paintings/pride.jpg';
 import anxiety from '../images/paintings/anxiety.jpg';
 import dinner from '../images/paintings/dinner.jpg';
+import deer from '../images/paintings/deer.jpg';
 import dinosaurMural from '../images/paintings/mural.jpg';
 
 const useStyles = makeStyles((theme) => ({
@@ -44,8 +45,8 @@ const useStyles = makeStyles((theme) => ({
     paddingTop: '75%',
   },
   muralCardMedia: {
-    paddingTop: '20%',
-    minHeight: 415
+    paddingTop: '34%',
+    minHeight: 300
   },
   cardContent: {
     flexGrow: 1,
@@ -207,6 +208,13 @@ const paintings = [
     size: '20 x 24',
     medium: 'Oil on Canvas',
     image: anxiety,
+    forSale: false
+  },
+  {
+    name: 'Deer in the Forest',
+    size: '20 x 24',
+    medium: 'Acrylic on Canvas',
+    image: deer,
     forSale: false
   },
   {
