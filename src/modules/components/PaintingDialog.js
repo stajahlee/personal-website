@@ -17,7 +17,7 @@ const styles = theme => ({
     },
   },
   '@media only screen and (min-width: 601px)': {
-    dialogWeb: {
+    paperWidthSm: {
       maxWidth: 800
     },
     dialogMobile: {
