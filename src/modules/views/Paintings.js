@@ -19,7 +19,7 @@ import humility from '../images/paintings/humility.jpg';
 import pride from '../images/paintings/pride.jpg';
 import anxiety from '../images/paintings/anxiety.jpg';
 import dinner from '../images/paintings/dinner.jpg';
-
+import dinosaurMural from '../images/paintings/mural.jpg';
 
 const useStyles = makeStyles((theme) => ({
   headerContent: {
@@ -43,6 +43,10 @@ const useStyles = makeStyles((theme) => ({
   cardMedia: {
     paddingTop: '75%',
   },
+  muralCardMedia: {
+    paddingTop: '20%',
+    minHeight: 415
+  },
   cardContent: {
     flexGrow: 1,
     pointerEvents: 'none',
@@ -52,6 +56,9 @@ const useStyles = makeStyles((theme) => ({
     backgroundColor: theme.palette.background.paper,
     padding: theme.spacing(6),
   },
+  mural: {
+    cursor: 'default'
+  }
 }));
 
 function Paintings() {
@@ -93,7 +100,7 @@ function Paintings() {
           </Container>
         </div>
 
-        <Container className={classes.cardGrid} maxWidth="md">
+        <Container className={classes.cardGrid} maxWidth="lg">
           <Grid container spacing={4}>
             {paintings.map((painting, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
@@ -126,6 +133,49 @@ function Paintings() {
         <Dialog selectedValue={selectedValue} open={open} onClose={handleClose} />
       
       </main>
+    
+      <main className={classes.main}>
+        <div className={classes.headerContent}>
+          <Container maxWidth="sm">
+            <Typography component="h3" variant="h3" align="center" color="textPrimary" gutterBottom>
+              Mural
+            </Typography>
+            <Typography variant="h5" align="center" color="textSecondary" paragraph>
+              Water-based exterior 
+            </Typography>
+          </Container>
+        </div>
+
+        <Container className={classes.cardGrid} maxWidth="lg">
+            <Grid item xs={12} sm={12} md={12}>
+              <CardActionArea className={classes.mural}>
+                <Card className={classes.card}>
+                  <CardMedia
+                    className={classes.muralCardMedia}
+                    image={mural.image}
+                    title={mural.name}
+                  />
+                  <CardContent>
+                    <Typography gutterBottom variant="h6" component="h6">
+                       {mural.name}
+                    </Typography>
+                    <Typography>
+                      {mural.medium}
+                    </Typography>
+                    <Typography>
+                      {mural.size}
+                    </Typography>
+                  </CardContent>
+                </Card>
+              </CardActionArea>
+            </Grid>
+          </Container>
+        
+        <Dialog selectedValue={selectedValue} open={open} onClose={handleClose} />
+      
+      </main>
+    
+    
     </React.Fragment>
   );
 }
@@ -196,5 +246,12 @@ const paintings = [
   }, 
 
 ]
+
+const mural = {
+  name: 'Geology Department Mural',
+  size: '43 x 15 ft',
+  medium: 'Water-based exterior paint on Brick',
+  image: dinosaurMural,
+}
 
 export default withRoot(Paintings);
