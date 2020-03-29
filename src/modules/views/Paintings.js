@@ -3,20 +3,22 @@ import withRoot from '../../modules/withRoot';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import CardActionArea from '@material-ui/core/CardActionArea';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import AppBar from '../components/SecondaryAppBar';
-import wrath from '../images/paintings/oilwrath.jpg';
-import redtree from '../images/paintings/waterwrath.jpeg';
+import Dialog from '../components/PaintingDialog';
+import wrath from '../images/paintings/wrath.jpg';
+import redtree from '../images/paintings/redtree.jpeg';
 import winter from '../images/paintings/winter.jpg';
-import yellowtree from '../images/paintings/waterautumn.jpg';
-import sunset from '../images/paintings/ocean.jpg';
-import humility from '../images/paintings/forest.jpg';
+import yellowtree from '../images/paintings/yellowtree.jpg';
+import sunset from '../images/paintings/sunset.jpg';
+import humility from '../images/paintings/humility.jpg';
 import pride from '../images/paintings/pride.jpg';
-import anxiety from '../images/paintings/clouds.jpg';
-import dinner from '../images/paintings/beach.jpg';
+import anxiety from '../images/paintings/anxiety.jpg';
+import dinner from '../images/paintings/dinner.jpg';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -36,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
     height: '100%',
     display: 'flex',
     flexDirection: 'column',
+    boxShadow: '0 1px 10px rgba(0,0,0,0.25)',
   },
   cardMedia: {
     paddingTop: '75%',
@@ -49,16 +52,28 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-
 function Paintings() {
   const classes = useStyles();
+  const [open, setOpen] = React.useState(false);
+  const [selectedValue, setSelectedValue] = React.useState(paintings[0]);
+
+  const handleClickOpen = (event) => {
+    const currentPainting = paintings.filter(p => p.name === event.target.title)
+    setSelectedValue(currentPainting[0]);
+    setOpen(true);
+
+  };
+
+  const handleClose = (value) => {
+    setOpen(false);
+    setSelectedValue(value);
+  };
 
   return (
     <React.Fragment>
       <AppBar paintingsView />
 
       <main className={classes.main}>
-
         <div className={classes.headerContent}>
           <Container maxWidth="sm">
             <Typography component="h3" variant="h3" align="center" color="textPrimary" gutterBottom>
@@ -74,28 +89,34 @@ function Paintings() {
           <Grid container spacing={4}>
             {paintings.map((painting, index) => (
               <Grid item key={index} xs={12} sm={6} md={4}>
-                <Card className={classes.card}>
-                  <CardMedia
-                    className={classes.cardMedia}
-                    image={painting.image}
-                    title={painting.name}
-                  />
-                  <CardContent className={classes.cardContent}>
-                    <Typography gutterBottom variant="h6" component="h6">
-                      {painting.name}
-                    </Typography>
-                    <Typography>
-                      {painting.medium}
-                    </Typography>
-                    <Typography>
-                      {painting.size}
-                    </Typography>
-                  </CardContent>
-                </Card>
+                <CardActionArea>
+                  <Card className={classes.card} onClick={handleClickOpen}>
+                    <CardMedia
+                      className={classes.cardMedia}
+                      image={painting.image}
+                      title={painting.name}
+                    />
+                    <CardContent className={classes.cardContent}>
+                      <Typography gutterBottom variant="h6" component="h6">
+                        {painting.name}
+                      </Typography>
+                      <Typography>
+                        {painting.medium}
+                      </Typography>
+                      <Typography>
+                        {painting.size}
+                      </Typography>
+                    </CardContent>
+                  </Card>
+                </CardActionArea>
+
               </Grid>
             ))}
           </Grid>
         </Container>
+        
+        <Dialog selectedValue={selectedValue} open={open} onClose={handleClose} />
+      
       </main>
     </React.Fragment>
   );
@@ -106,55 +127,64 @@ const paintings = [
     name: 'Wrath',
     size: '20 x 24',
     medium: 'Oil on Canvas',
-    image: wrath
+    image: wrath,
+    forSale: false
   },
   {
     name: 'Pride',
     size: '52 x 36',
     medium: 'Oil on Canvas',
-    image: pride
+    image: pride,
+    forSale: false
   },
   {
     name: 'Humility',
     size: '20 x 24',
     medium: 'Oil on Canvas',
-    image: humility
+    image: humility,
+    forSale: false
   },
   {
     name: 'Anxiety',
     size: '20 x 24',
     medium: 'Oil on Canvas',
-    image: anxiety
+    image: anxiety,
+    forSale: false
   },
   {
     name: 'Yellow Tree',
     size: '14 x 20',
     medium: 'Watercolor on Paper',
-    image: yellowtree
+    image: yellowtree,
+    forSale: false
   },
   {
     name: 'Red Tree',
     size: '14 x 20',
     medium: 'Watercolor on Paper',
-    image: redtree
+    image: redtree,
+    forSale: false
   },
   {
     name: 'Sunset',
     size: '8 x 10',
     medium: 'Oil on Canvas',
-    image: sunset
+    image: sunset,
+    forSale: false
   },  
   {
     name: 'Winter',
     size: '8 x 10',
     medium: 'Oil on Canvas',
-    image: winter
+    image: winter,
+    forSale: false
   }, 
   {
     name: 'Dinner',
     size: '20 x 24',
     medium: 'Acrylic on Canvas',
-    image: dinner
+    image: dinner,
+    forSale: false
   }, 
 
 ]
