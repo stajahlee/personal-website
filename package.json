@@ -10,9 +10,12 @@
   },
   "dependencies": {
     "@next/mdx": "^13.5.4",
+    "@nextui-org/react": "^2.2.9",
+    "@types/mapbox-gl": "^3.1.0",
     "@upstash/redis": "^1.23.3",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.298.0",
+    "mapbox-gl": "^3.1.2",
     "markdown-wasm": "^1.2.0",
     "next": "^13.5.4",
     "next-contentlayer": "^0.3.4",
