@@ -5,8 +5,8 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    default: 'stajah.lee',
-    template: '%s | stajah.lee',
+    default: 'stajah.lee.hoeflich',
+    template: '%s | stajah.lee.hoeflich',
   },
   description: 'glimpse some stuff i work on',
   robots: {
@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang="en" className={[inter.variable, calSans.variable].join(' ')}>
       <head />
       <body
-        className={`bg-zinc-900 ${process.env.NODE_ENV === 'development' ? 'debug-screens' : undefined
+        className={`bg-neutral-900 ${process.env.NODE_ENV === 'development' ? 'debug-screens' : undefined
         }`}
       >
         {children}

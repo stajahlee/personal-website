@@ -16,7 +16,7 @@ const MenuItem: FC<Props> = ({ name, route, setter }) => {
     <Link
       href={route}
       onClick={() => setter()}
-      className={`flex gap-1 [&>*]:my-auto text-md pl-6 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
+      className={`flex gap-1 [&>*]:my-auto text-md py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
     >
       <div>{name}</div>
     </Link>
