@@ -9,7 +9,7 @@ type Props = {
 };
 
 const Sidebar: FC<Props> = ({ show, setter }) => {
-  const className = 'bg-black top-0 bottom-0 left-0 z-40';
+  const className = 'bg-neutral-950 top-0 bottom-0 left-0 z-40';
   const appendClass = show ? ' ml-0' : ' ml-[-250px] md:ml-0';
 
   const ModalOverlay = () => (
@@ -20,27 +20,30 @@ const Sidebar: FC<Props> = ({ show, setter }) => {
   )
 
   const options = [
-    { name: 'Home', route: '/' }
+    { name: 'About', route: '/about' },
+    { name: 'Portfolio', route: '/portfolio' },
+    { name: 'Blog', route: '/blog' },
+    { name: 'Contact', route: '/contact' }
   ]
 
   return (
     <>
       <div className={`${className}${appendClass}`}>
-        <div className="p-2 flex">
-          <Link href="/">
-            <Image
-              priority
-              src="/images/rocket.svg"
-              height={100}
-              width={100}
-              alt="Stajah portfolio"
-            />
-          </Link>
-        </div>
+        <Link href="/">
+          <Image
+            priority
+            src="/images/squares.png"
+            height={150}
+            width={150}
+            alt="Stajah portfolio"
+          />
+        </Link>
         <div className="flex flex-col">
           {options.map(optionData => 
-            <MenuItem key={optionData.name} {...optionData} setter={setter} /> )
-          }
+            <span key={optionData.name} className='px-3 min-w-6'>
+              <MenuItem {...optionData} setter={setter} />
+            </span>
+          )}
         </div>
       </div>
       {show ? <ModalOverlay /> : <></>}
