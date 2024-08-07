@@ -43,7 +43,7 @@ export default function RootLayout({
     <html lang="en" className={[inter.variable, calSans.variable].join(' ')}>
       <head />
       <body
-        className={`bg-neutral-900 ${process.env.NODE_ENV === 'development' ? 'debug-screens' : undefined
+        className={`bg-neutral-950 ${process.env.NODE_ENV === 'development' ? 'debug-screens' : undefined
         }`}
       >
         {children}

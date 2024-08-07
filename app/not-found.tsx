@@ -1,10 +1,10 @@
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from 'next/image'
+import Link from 'next/link'
  
 export default function NotFound() {
   return (
     <>
-      <div className="bg-image-wrapper">
+      <div className="bg-image-wrapper md:bg-image-wrapper-md">
         <Image
           src="/images/galaxy.jpg"
           alt="Outerspace"
@@ -22,7 +22,7 @@ export default function NotFound() {
 
         <div className='flex items-center justify-center mt-3 gap-2'>
           <Image src="/images/search_earth.svg" alt="Search earth" width={24  } height={24  } />
-          <h1 className="richtext text-white text-3xl">lost in space</h1>
+          <h2 className="richtext text-white text-3xl">lost in space</h2>
         </div>
 
         <Link href="/" className="animate-fade-in mt-4 rounded-md bg-violet-600 px-3.5 py-2 text-sm font-semibold text-white shadow-sm hover:bg-violet-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
