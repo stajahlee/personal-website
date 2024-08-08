@@ -1,18 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-
-const navigation = [
-  { name: 'Projects', href: '/projects' },
-  { name: 'Contact', href: '/contact' },
-];
+import { NAVIGATION } from '@/util/constants';
 
 export default function Home() {
   return (
-    <div className="overflow-hidden bg-gradient-to-br from-black to-neutral-900">
+    <div className="overflow-hidden bg-neutral-950">
       <div className="body-background flex flex-col items-center justify-center w-screen h-screen">
         <nav className="my-16 animate-fade-in">
           <ul className="flex items-center justify-center gap-4">
-            {navigation.map((item) => (
+            {NAVIGATION.filter(nav => nav.href !== '/').map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
