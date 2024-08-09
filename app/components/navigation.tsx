@@ -1,26 +1,29 @@
-'use client';
-import { ArrowLeft } from 'lucide-react';
-import { Button } from '@nextui-org/react';
-import Link from 'next/link';
-import { useRouter } from 'next/navigation';
-import React, { useEffect, useRef, useState } from 'react';
-import { NAVIGATION } from '@/util/constants';
+'use client'
+import { ArrowLeft } from 'lucide-react'
+import { Button } from '@nextui-org/react'
+import Link from 'next/link'
+import { useRouter, usePathname } from 'next/navigation'
+import React, { useEffect, useRef, useState } from 'react'
+import { NAVIGATION } from '@/util/constants'
 
 export const Navigation: React.FC = () => {
-  const ref = useRef<HTMLElement>(null);
-  const router = useRouter();
-  const [isIntersecting, setIntersecting] = useState(true);
+  const ref = useRef<HTMLElement>(null)
+  const router = useRouter()
+  const [isIntersecting, setIntersecting] = useState(true)
 
+  const currentPathname = usePathname()
 
   useEffect(() => {
-    if (!ref.current) return;
+    if (!ref.current) return
     const observer = new IntersectionObserver(([entry]) =>
       setIntersecting(entry.isIntersecting),
-    );
+    )
 
-    observer.observe(ref.current);
-    return () => observer.disconnect();
-  }, []);
+    observer.observe(ref.current)
+    return () => observer.disconnect()
+  }, [])
+
+  const baseLinkClasses = 'duration-200 text-zinc-400 hover:text-zinc-100'
 
   return (
     <header ref={ref}>
@@ -37,7 +40,7 @@ export const Navigation: React.FC = () => {
               <Link
 							  key={item.name}
                 href={item.href}
-                className="duration-200 text-zinc-400 hover:text-zinc-100"
+                className={currentPathname === item.href ? baseLinkClasses.concat(' text-zinc-100') : baseLinkClasses}
               >
                 {item.name}
               </Link>
@@ -55,5 +58,5 @@ export const Navigation: React.FC = () => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}
