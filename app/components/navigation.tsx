@@ -22,9 +22,6 @@ export const Navigation: React.FC = () => {
     return () => observer.disconnect();
   }, []);
 
-  const isAuthed = false
-  const path = isAuthed ? '/secrets' : '/'
-
   return (
     <header ref={ref}>
       <div
