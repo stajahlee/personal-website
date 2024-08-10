@@ -2,3 +2,5 @@ node_modules
 .contentlayer/
 .next/
 .env.local
+.vscode
+.DS_Store

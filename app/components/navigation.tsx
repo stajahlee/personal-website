@@ -23,8 +23,6 @@ export const Navigation: React.FC = () => {
     return () => observer.disconnect()
   }, [])
 
-  const baseLinkClasses = 'duration-200 text-zinc-400 hover:text-zinc-100'
-
   return (
     <header ref={ref}>
       <div
@@ -36,14 +34,17 @@ export const Navigation: React.FC = () => {
       >
         <div className="container flex flex-row-reverse items-center justify-between p-6 mx-auto">
           <div className="flex justify-between gap-8">
-  					{NAVIGATION.map((item) =>
-              <Link
+  					{NAVIGATION.map((item) => {
+              const textColorClass = currentPathname === item.href ? 'text-zinc-100 font-semibold' : 'text-zinc-400'
+              return <Link
 							  key={item.name}
                 href={item.href}
-                className={currentPathname === item.href ? baseLinkClasses.concat(' text-zinc-100') : baseLinkClasses}
+                className={textColorClass.concat(' duration-200 hover:text-zinc-100')}
               >
                 {item.name}
               </Link>
+            }
+              
 				    )}
           </div>
 

@@ -4,12 +4,11 @@
 
 @layer base {
   .text-edge-outline {
-    -webkit-text-stroke: 1px rgba(255,255,255,0.3);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.3);
   }
-} 
+}
 
-@layer 
- utilities {
+@layer utilities {
   .bg-image-wrapper-md {
     width: 100vw;
   }
@@ -25,8 +24,15 @@
 }
 
 .body-background {
-  background-image: radial-gradient(rgba(217, 217, 217, 0.1) 1px, transparent 0);
+  background-image: radial-gradient(
+    rgba(217, 217, 217, 0.1) 1px,
+    transparent 0
+  );
   background-size: 50px 50px;
   width: 100vw;
   height: 100vh;
+}
+
+.triangle-background {
+  opacity: 0.5;
 }
