@@ -42,25 +42,23 @@ describe('ContactPage', () => {
   });
 
   describe('navigation links', () => {
-    it('renders work navigation link', () => {
+    it('renders 5 navigation link', () => {
       const { navLinks } = subject();
 
-      expect(navLinks[0]).toHaveTextContent('Work');
-      expect(navLinks[0]).toHaveAttribute('href', '/work');
+      expect(navLinks).toHaveLength(5);
     });
 
-    it('renders contact navigation link', () => {
+    it.each([
+      { label: 'About', href: '/about', linkLocation: 0 },
+      { label: 'Work', href: '/work', linkLocation: 1 },
+      { label: 'Blog', href: '/blog', linkLocation: 2 },
+      { label: 'Contact', href: '/contact', linkLocation: 3 },
+      { label: 'Home', href: '/', linkLocation: 4 },
+    ])('renders %s navigation link', ({ label, href, linkLocation }) => {
       const { navLinks } = subject();
 
-      expect(navLinks[1]).toHaveTextContent('Contact');
-      expect(navLinks[1]).toHaveAttribute('href', '/contact');
-    });
-
-    it('renders home navigation link', () => {
-      const { navLinks } = subject();
-
-      expect(navLinks[2]).toHaveTextContent('Home');
-      expect(navLinks[2]).toHaveAttribute('href', '/');
+      expect(navLinks[linkLocation]).toHaveTextContent(label);
+      expect(navLinks[linkLocation]).toHaveAttribute('href', href);
     });
   });
 });
