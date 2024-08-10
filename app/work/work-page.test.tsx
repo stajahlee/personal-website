@@ -1,10 +1,10 @@
 import '@testing-library/jest-dom';
 import { render } from '@testing-library/react';
-import ProjectsPage from './page';
+import WorkPage from './page';
 
-describe('ContactPage', () => {
+describe('WorkPage', () => {
   const subject = () => {
-    return render(<ProjectsPage />);
+    return render(<WorkPage />);
   };
 
   it('renders general message', () => {

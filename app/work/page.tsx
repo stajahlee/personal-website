@@ -2,7 +2,7 @@
 import { Card } from '../components/card';
 import PageWithNavigation from '../components/page-with-navigation';
 
-export default function ProjectsPage() {
+export default function WorkPage() {
   return (
     <PageWithNavigation>
       <div className="container flex items-center justify-center min-h-screen px-4 mx-auto">
