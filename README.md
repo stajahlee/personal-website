@@ -9,4 +9,4 @@ pnpm install
 pnpm dev
 ```
 
-<a href="https://chronark.com">design provided by chronark.com</a>
+<a href="https://chronark.com">initial design provided by chronark.com</a>
