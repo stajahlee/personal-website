@@ -13,7 +13,7 @@ export default function Home() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="duration-500 text-zinc-400 hover:text-white"
+                className="duration-500 text-zinc-400 hover:text-purple-400 hover:animate-pulse"
               >
                 {item.name}
               </Link>
