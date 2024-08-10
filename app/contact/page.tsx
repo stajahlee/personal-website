@@ -7,7 +7,7 @@ import { FC, ReactNode } from 'react';
 
 type SocialContact = {
   icon: ReactNode,
-  href?: string,
+  href: string,
   label: string,
   handle: string
 }
@@ -26,13 +26,19 @@ const socials: SocialContact[] = [
     label: 'Github',
     handle: 'stajahlee',
   },
+  {
+    icon: <Mail size={20} />,
+    href: 'mailto:stajah@stajahlee.com',
+    label: 'Email',
+    handle: 'stajah@stajahlee.com',
+  }
 ];
 
 const SocialCard: FC<SocialContact> = (props: SocialContact) => {
   return <Card>
     <Link
-      href={props.href || ''}
-      target="_blank"
+      href={props.href}
+      target={props.label !== 'Email' ? "_blank" : undefined}
       className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
     >
       <span
@@ -62,11 +68,6 @@ export default function ContactPage() {
           {socials.map((s) => (
             <SocialCard key={s.label} {...s} />
           ))}
-          <SocialCard
-            label='Email'
-            handle='stajah@stajahlee.com'
-            icon={<Mail size={20} />}
-          />
         </div>
       </div>
     </PageWithNavigation>
