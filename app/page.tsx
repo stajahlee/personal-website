@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import { NAVIGATION } from '@/util/constants';
-import Image from 'next/image';
 
 export default function Home() {
   return (
