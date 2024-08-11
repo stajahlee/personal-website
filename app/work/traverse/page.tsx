@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import { Header } from '../header';
-import { Heading4 } from 'lucide-react';
 
 export default function TraversePage() {
   const project = {
