@@ -96,7 +96,7 @@ export default function WorkPage() {
                   Youth camp website
                 </h2>
                 <p className="mt-4 pb-8 leading-8 duration-150 text-zinc-400 group-hover:text-zinc-300">
-                  Created the camp&aposs website using tools for better
+                  Created the camp&apos;s website using tools for better
                   collaboration and extensibility in light of website ownership.
                   Specifically, requiring technology skills limited the camp
                   leadership from taking over when needed.
