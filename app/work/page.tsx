@@ -24,16 +24,16 @@ export default function WorkPage() {
               <article className="relative w-full h-full p-4 md:p-8">
                 <div className="flex items-center justify-between gap-2">
                   <div className="text-xs text-violet-300">
-                    <time dateTime={new Date('12-07-2021').toISOString()}>
+                    <time dateTime={new Date('12/07/2021').toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: 'medium',
-                      }).format(new Date('12-07-2021'))}
+                      }).format(new Date('12/07/2021'))}
                     </time>
                     {'  —  '}
-                    <time dateTime={new Date('07-31-2024').toISOString()}>
+                    <time dateTime={new Date('07/31/2024').toISOString()}>
                       {Intl.DateTimeFormat(undefined, {
                         dateStyle: 'medium',
-                      }).format(new Date('07-31-2024'))}
+                      }).format(new Date('07/31/2024'))}
                     </time>
                   </div>
                 </div>
