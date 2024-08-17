@@ -10,19 +10,19 @@ export default function TraversePage() {
   return (
     <div className="bg-zinc-50 min-h-screen">
       <Header project={project} />
-      <article className="flex flex-col items-center mt-12 px-12">
+      <article className="flex flex-col items-center py-12 px-12">
         <a
-          className="flex items-end flex-col gap-2"
+          className="flex items-end flex-col gap-2 mb-5"
           target="blank"
           href="https://info.teamnorthwoods.com/traverse-overview-video"
         >
           <Image
             src="/images/traverse.gif"
             alt="Traverse"
-            height={600}
-            width={600}
+            height={800}
+            width={800}
           />
-          <p className="text-slate-500 text-sm w-100">
+          <p className="text-slate-500 text-sm text-right w-100">
             Image owned by Northwoods, click here to learn more about Traverse
             and Northwoods
           </p>
