@@ -5,13 +5,11 @@ export default function TraversePage() {
     title: 'Traverse',
     description:
       'Cloud-based, commercial off-the-shelf document management, forms management, and mobility software for human services agencies.',
-    image: {
-      href: 'https://info.teamnorthwoods.com/traverse-overview-video',
-      src: '/images/traverse.gif',
-      alt: 'Traverse',
-      caption:
-        'Image owned by Northwoods, click here to learn more about Traverse and Northwoods',
-    },
+    href: 'https://info.teamnorthwoods.com/traverse-overview-video',
+    src: '/images/traverse.png',
+    alt: 'Traverse',
+    caption:
+      'Image owned by Northwoods, click here to learn more about Traverse and Northwoods',
     subtitle: 'UI Refresh Project',
   };
 

@@ -1,17 +1,15 @@
 import { faker } from '@faker-js/faker';
-import type { Project } from '../components/layout/work-details';
+import type { Project } from '../components/types';
 
-export const createWorkDetailsProject = (optionalProject?: Project) => {
+export const createWorkDetailsProject = (overrides?: Partial<Project>) => {
   return {
     title: faker.commerce.productName(),
     description: faker.commerce.productDescription(),
-    image: {
-      href: faker.internet.url(),
-      src: faker.image.url(),
-      alt: faker.commerce.department(),
-      caption: faker.music.genre(),
-    },
+    href: faker.internet.url(),
+    src: faker.image.url(),
+    alt: faker.commerce.department(),
+    caption: faker.music.genre(),
     subtitle: faker.music.songName(),
-    ...optionalProject,
+    ...overrides,
   };
 };

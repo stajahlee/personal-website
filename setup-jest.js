@@ -1,3 +1,4 @@
+import '@testing-library/jest-dom';
 const matchers = require('jest-extended');
 const nextRouterMock = require('next-router-mock');
 
@@ -10,41 +11,41 @@ afterEach(() => {
 jest.mock('next/router', () => nextRouterMock);
 
 jest.mock('next/navigation', () => {
-  const { useRouter } = nextRouterMock
+  const { useRouter } = nextRouterMock;
   const usePathname = () => {
-    const router = useRouter()
-    return router.pathname
-  }
+    const router = useRouter();
+    return router.pathname;
+  };
 
   const useSearchParams = () => {
-    const router = useRouter()
-    return new URLSearchParams(router.query)
-  }
+    const router = useRouter();
+    return new URLSearchParams(router.query);
+  };
 
   return {
     useRouter,
     usePathname,
-    useSearchParams
-  }
+    useSearchParams,
+  };
 });
 
 export class IntersectionObserver {
   root = null;
   rootMargin = '';
   thresholds = [];
- 
+
   disconnect() {
     return null;
   }
- 
+
   observe() {
     return null;
   }
- 
+
   takeRecords() {
     return [];
   }
- 
+
   unobserve() {
     return null;
   }

@@ -1,22 +1,7 @@
 import { Header } from '@/app/work/header';
 import Image from 'next/image';
 import { PropsWithChildren } from 'react';
-
-export type Project = {
-  title: string;
-  description: string;
-  image: {
-    href: string;
-    src: string;
-    alt: string;
-    caption: string;
-  };
-  subtitle: string;
-};
-
-type WorkDetailsPageProps = {
-  project: Project;
-};
+import type { WorkDetailsPageProps } from '../types';
 
 const WorkDetailsPage: React.FC<PropsWithChildren & WorkDetailsPageProps> = ({
   children,
@@ -29,16 +14,17 @@ const WorkDetailsPage: React.FC<PropsWithChildren & WorkDetailsPageProps> = ({
         <a
           className="flex items-end flex-col gap-2 mb-5"
           target="blank"
-          href={project.image.href}
+          href={project.href}
         >
           <Image
-            src={project.image.src}
-            alt={project.image.alt}
+            src={project.src}
+            alt={project.alt}
             height={800}
             width={800}
+            unoptimized={project.src.includes('.gif')}
           />
           <p className="text-slate-500 text-sm text-right w-100">
-            {project.image.caption}
+            {project.caption}
           </p>
         </a>
 

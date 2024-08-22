@@ -1,9 +1,8 @@
-'use client';
 import { Card } from '../components/card';
 import PageWithNavigation from '../components/page-with-navigation';
 import Link from 'next/link';
 
-export default function WorkPage() {
+export default async function WorkPage() {
   return (
     <PageWithNavigation>
       <div className="px-6 pt-20 mx-auto space-y-8 max-w-7xl lg:px-8 md:space-y-16 md:pt-24 lg:pt-32">

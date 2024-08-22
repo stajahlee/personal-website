@@ -1,19 +1,11 @@
 import WorkDetailsPage from '@/app/components/layout/work-details';
+import { fetchProject } from '@/app/lib/data/projects-service';
 
-export default function CampPage() {
-  const project = {
-    title: 'Youth camp website',
-    description:
-      'Collaboration with camp management to present options for a better and more accessible way to make regular website updates.',
-    image: {
-      href: 'https://www.forthillcyc.org/',
-      src: '/images/camp.png',
-      alt: 'Camp website',
-      caption:
-        'Click here to see what camp management has been able to add to the website over the past 2 years.',
-    },
-    subtitle: 'Options presented',
-  };
+export default async function CampPage() {
+  const project = await fetchProject('%camp%');
+  if (!project) {
+    return;
+  }
 
   const campOptions = [
     {
