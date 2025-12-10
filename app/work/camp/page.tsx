@@ -1,6 +1,8 @@
 import WorkDetailsPage from "@/app/components/layout/work-details";
 import { fetchProject } from "@/app/lib/data/projects-service";
 
+export const dynamic = 'force-dynamic';
+
 export default async function CampPage() {
   const project = await fetchProject("%camp%");
   if (!project) {
