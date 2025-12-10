@@ -22,7 +22,9 @@ export const Card: React.FC<PropsWithChildren & Props> = ({
     mouseY.set(clientY - top);
   }
   const maskImage = useMotionTemplate`radial-gradient(240px at ${mouseX}px ${mouseY}px, white, transparent)`;
-  const gradientColors = motionColors?.length ? motionColors.join(", ") : "rgba(255,255,255,0.1)";
+  const gradientColors = motionColors?.length
+    ? motionColors.join(", ")
+    : "rgba(255,255,255,0.1)";
   const style = { maskImage, WebkitMaskImage: maskImage };
 
   return (
