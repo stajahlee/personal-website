@@ -1,30 +1,30 @@
-import WorkDetailsPage from '@/app/components/layout/work-details';
-import { fetchProject } from '@/app/lib/data/projects-service';
+import WorkDetailsPage from "@/app/components/layout/work-details";
+import { fetchProject } from "@/app/lib/data/projects-service";
 
 export default async function CampPage() {
-  const project = await fetchProject('%camp%');
+  const project = await fetchProject("%camp%");
   if (!project) {
     return;
   }
 
   const campOptions = [
     {
-      li: 'Custom made deployed website',
+      li: "Custom made deployed website",
       subtitle:
-        'Since I work as a software developer professionally the first option I presented was a custom made deployed website.',
-      pros: 'the site would be custom, efficient, and the UI/UX would be high quality.',
-      cons: 'it would be expensive and harder to maintain and it would depend on me or another professional technologist to maintain, which was the problem with the prior website.',
+        "Since I work as a software developer professionally the first option I presented was a custom made deployed website.",
+      pros: "the site would be custom, efficient, and the UI/UX would be high quality.",
+      cons: "it would be expensive and harder to maintain and it would depend on me or another professional technologist to maintain, which was the problem with the prior website.",
     },
     {
-      li: 'Wordpress site',
-      pros: 'can be maintained and added to by non technical folks and have a lot of beauitiful and modern templates.',
-      cons: 'compared to drag and drop sites there is more effort to set it up and it would likely be a bit more expensive.',
+      li: "Wordpress site",
+      pros: "can be maintained and added to by non technical folks and have a lot of beauitiful and modern templates.",
+      cons: "compared to drag and drop sites there is more effort to set it up and it would likely be a bit more expensive.",
     },
     {
-      li: 'Wix (or similar) drag and drop site',
-      subtitle: 'My recommendation!',
-      pros: 'this would be easiest to add to and maintain for the camp leadership.',
-      cons: 'harder to transfer off the platform and less customizable.',
+      li: "Wix (or similar) drag and drop site",
+      subtitle: "My recommendation!",
+      pros: "this would be easiest to add to and maintain for the camp leadership.",
+      cons: "harder to transfer off the platform and less customizable.",
     },
   ];
 

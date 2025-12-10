@@ -14,4 +14,4 @@ export type WorkDetailsPageProps = {
   project: Project;
 };
 
-export type ProjectRaw = Omit<Project, 'image'> & Image;
+export type ProjectRaw = Omit<Project, "image"> & Image;

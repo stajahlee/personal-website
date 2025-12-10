@@ -1,16 +1,16 @@
-import WorkDetailsPage from '@/app/components/layout/work-details';
+import WorkDetailsPage from "@/app/components/layout/work-details";
 
 export default function TraversePage() {
   const project = {
-    title: 'Traverse',
+    title: "Traverse",
     description:
-      'Cloud-based, commercial off-the-shelf document management, forms management, and mobility software for human services agencies.',
-    href: 'https://info.teamnorthwoods.com/traverse-overview-video',
-    src: '/images/traverse.png',
-    alt: 'Traverse',
+      "Cloud-based, commercial off-the-shelf document management, forms management, and mobility software for human services agencies.",
+    href: "https://info.teamnorthwoods.com/traverse-overview-video",
+    src: "/images/traverse.png",
+    alt: "Traverse",
     caption:
-      'Image owned by Northwoods, click here to learn more about Traverse and Northwoods',
-    subtitle: 'UI Refresh Project',
+      "Image owned by Northwoods, click here to learn more about Traverse and Northwoods",
+    subtitle: "UI Refresh Project",
   };
 
   return (

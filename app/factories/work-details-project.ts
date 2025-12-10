@@ -1,5 +1,5 @@
-import { faker } from '@faker-js/faker';
-import type { Project } from '../components/types';
+import { faker } from "@faker-js/faker";
+import type { Project } from "../components/types";
 
 export const createWorkDetailsProject = (overrides?: Partial<Project>) => {
   return {

@@ -1,16 +1,17 @@
-import { FC, ReactNode } from 'react';
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { FC, ReactNode } from "react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 type Props = {
-  name: string
-  route: string
-  setter: () => void
-}
-    
+  name: string;
+  route: string;
+  setter: () => void;
+};
+
 const MenuItem: FC<Props> = ({ name, route, setter }) => {
   const pathname = usePathname();
-  const colorClass = pathname === route ? 'text-white' : 'text-white/50 hover:text-white';
+  const colorClass =
+    pathname === route ? "text-white" : "text-white/50 hover:text-white";
 
   return (
     <Link
@@ -20,7 +21,7 @@ const MenuItem: FC<Props> = ({ name, route, setter }) => {
     >
       <div>{name}</div>
     </Link>
-  )
-}
+  );
+};
 
 export default MenuItem;

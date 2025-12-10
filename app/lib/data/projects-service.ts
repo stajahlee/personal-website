@@ -1,5 +1,5 @@
-import type { Project, ProjectRaw } from '@/app/components/types';
-import { sql } from '@vercel/postgres';
+import type { Project, ProjectRaw } from "@/app/components/types";
+import { sql } from "@vercel/postgres";
 
 export async function fetchAllProjects() {
   try {
@@ -20,8 +20,8 @@ export async function fetchAllProjects() {
 
     return data.rows;
   } catch (error) {
-    console.error('Database Error:', error);
-    throw new Error('Failed to fetch project data.');
+    console.error("Database Error:", error);
+    throw new Error("Failed to fetch project data.");
   }
 }
 
@@ -38,7 +38,7 @@ export async function fetchProject(likeTitleString: string) {
       return project as Project;
     }
   } catch (error) {
-    console.error('Database Error:', error);
-    throw new Error('Failed to fetch project data.');
+    console.error("Database Error:", error);
+    throw new Error("Failed to fetch project data.");
   }
 }

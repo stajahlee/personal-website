@@ -1,5 +1,5 @@
-import { PropsWithChildren } from 'react';
-import { Navigation } from './navigation';
+import { PropsWithChildren } from "react";
+import { Navigation } from "./navigation";
 
 const PageWithNavigation: React.FC<PropsWithChildren> = ({ children }) => {
   return (
@@ -7,7 +7,7 @@ const PageWithNavigation: React.FC<PropsWithChildren> = ({ children }) => {
       <Navigation />
       {children}
     </div>
-  )
-}
+  );
+};
 
-export default PageWithNavigation
+export default PageWithNavigation;

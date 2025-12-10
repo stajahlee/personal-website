@@ -1,7 +1,7 @@
-import { Header } from '@/app/work/header';
-import Image from 'next/image';
-import { PropsWithChildren } from 'react';
-import type { WorkDetailsPageProps } from '../types';
+import { Header } from "@/app/work/header";
+import Image from "next/image";
+import { PropsWithChildren } from "react";
+import type { WorkDetailsPageProps } from "../types";
 
 const WorkDetailsPage: React.FC<PropsWithChildren & WorkDetailsPageProps> = ({
   children,
@@ -21,7 +21,7 @@ const WorkDetailsPage: React.FC<PropsWithChildren & WorkDetailsPageProps> = ({
             alt={project.alt}
             height={800}
             width={800}
-            unoptimized={project.src.includes('.gif')}
+            unoptimized={project.src.includes(".gif")}
           />
           <p className="text-slate-500 text-sm text-right w-100">
             {project.caption}

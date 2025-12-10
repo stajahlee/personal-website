@@ -1,9 +1,9 @@
-'use client';
-import { Github, Mail, Linkedin } from 'lucide-react';
-import Link from 'next/link';
-import { Card } from '../components/card';
-import PageWithNavigation from '../components/page-with-navigation';
-import { FC, ReactNode } from 'react';
+"use client";
+import { Github, Mail, Linkedin } from "lucide-react";
+import Link from "next/link";
+import { Card } from "../components/card";
+import PageWithNavigation from "../components/page-with-navigation";
+import { FC, ReactNode } from "react";
 
 type SocialContact = {
   icon: ReactNode;
@@ -13,25 +13,25 @@ type SocialContact = {
 };
 
 const socialIconClasses =
-  'relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange';
+  "relative z-10 flex items-center justify-center w-12 h-12 text-sm duration-1000 border rounded-full text-zinc-200 group-hover:text-white group-hover:bg-zinc-900 border-zinc-500 bg-zinc-900 group-hover:border-zinc-200 drop-shadow-orange";
 const socials: SocialContact[] = [
   {
     icon: <Linkedin size={20} />,
-    href: 'https://linkedin.com/in/stajah',
-    label: 'LinkedIn',
-    handle: 'stajah',
+    href: "https://linkedin.com/in/stajah",
+    label: "LinkedIn",
+    handle: "stajah",
   },
   {
     icon: <Github size={20} />,
-    href: 'https://github.com/stajahlee',
-    label: 'Github',
-    handle: 'stajahlee',
+    href: "https://github.com/stajahlee",
+    label: "Github",
+    handle: "stajahlee",
   },
   {
     icon: <Mail size={20} />,
-    href: 'mailto:stajah@stajahlee.com',
-    label: 'Email',
-    handle: 'stajah@stajahlee.com',
+    href: "mailto:stajah@stajahlee.com",
+    label: "Email",
+    handle: "stajah@stajahlee.com",
   },
 ];
 
@@ -40,7 +40,7 @@ const SocialCard: FC<SocialContact> = (props: SocialContact) => {
     <Card withMotion>
       <Link
         href={props.href}
-        target={props.label !== 'Email' ? '_blank' : undefined}
+        target={props.label !== "Email" ? "_blank" : undefined}
         className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24 md:p-16"
       >
         <span
@@ -49,7 +49,7 @@ const SocialCard: FC<SocialContact> = (props: SocialContact) => {
         />
         <span role="img" className={socialIconClasses}>
           {props.icon}
-        </span>{' '}
+        </span>{" "}
         <div className="z-10 flex flex-col items-center">
           <span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
             {props.handle}
