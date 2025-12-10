@@ -32,6 +32,14 @@ export default function Home() {
             {"It's not a bug - it's an undocumented feature."}
           </h2>
         </div>
+
+        <Link
+          href="/christmas"
+          className="fixed bottom-6 right-6 text-4xl hover:scale-125 transition-transform duration-200"
+          title="Christmas Trivia Quiz"
+        >
+          🎄
+        </Link>
       </div>
     </div>
   );
