@@ -9,7 +9,6 @@ import {
   useSearchParams,
 } from "next/navigation";
 import { questionsWithAnswers } from "../data/questions";
-import Link from "next/link";
 
 const AnswerCard: FC<{ answer: string; onClick: () => void }> = ({
   answer,
@@ -103,14 +102,6 @@ function QuestionContent() {
           />
         ))}
       </div>
-
-      <Link
-        href="/christmas/mad-libs"
-        className="fixed bottom-6 left-6 text-4xl hover:scale-125 transition-transform duration-200"
-        title="Christmas Mad Libs"
-      >
-        📖
-      </Link>
     </div>
   );
 }
